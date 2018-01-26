@@ -1,3 +1,4 @@
+target
 rebel.xml
 *~
 mycollab-ui/.cache
@@ -35,6 +36,7 @@ WebResourceGenerator.java
 ThemeMobileCompiler.java
 README.html
 mycollab-services-community/.mycollab/.app.properties
+mycollab-services-community/wiki-repo-test
 mycollab-app-community/.mycollab/.app.properties
 default-mycollab-test.properties
 mycollab-app-community/src/main/config/mycollab.properties
