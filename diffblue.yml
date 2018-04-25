@@ -2,4 +2,4 @@ buildCmd: cd mycollab-core; mvn compile
 testCmd: cd mycollab-core; mvn test
 ignoreExistingCoverage: true
 cbmcArguments:
-  slice-function-calls: "org\.slf4j\.Logger.*"
+  slice-function-calls: org\.slf4j\.Logger.*
