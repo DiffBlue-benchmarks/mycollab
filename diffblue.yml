@@ -1,4 +1,4 @@
-buildCmd: cd mycollab-core; mvn compile
+buildCmd: cd mycollab-core; mvn -e -X -Dmaven.test.skip=true compile
 testCmd: cd mycollab-core; mvn test
 ignoreExistingCoverage: true
 cbmcArguments:
