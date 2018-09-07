@@ -1,0 +1,48 @@
+cbmcArguments:
+  java-mock-class: ["java.security.KeyFactory", "java.security.Signature", "java.util.Date", "java.io.FileReader", "java.nio.file.Files", "java.lang.Process", "java.lang.ProcessBuilder", "java.io.File"]
+phases:
+-
+  timeout: 300
+  cbmcArguments:
+    classpath: '/tools/cbmc/models.jar:.'
+    verbosity: 10
+    unwind: 1
+    string-max-length: 1000
+    string-max-input-length: 100
+    java-max-vla-length: 5
+    java-max-input-array-length: 5
+    string-printable: true
+    java-throw-runtime-exceptions: false
+    depth: 1200
+    java-external-code-action: 'mock'
+    load-containing-class-only: true
+-
+  timeout: 300
+  cbmcArguments:
+    classpath: '/tools/cbmc/models-simple-overlay.jar:/tools/cbmc/models.jar:.'
+    verbosity: 10
+    depth: false
+    unwind: 1
+    string-max-length: 1000
+    string-max-input-length: 100
+    java-max-vla-length: 5
+    java-max-input-array-length: 5
+    string-printable: true
+    java-throw-runtime-exceptions: false
+    java-external-code-action: 'mock'
+    load-containing-class-only: true
+-
+  timeout: 300
+  cbmcArguments:
+    classpath: '/tools/cbmc/models.jar:.'
+    verbosity: 10
+    depth: false
+    unwind: 4
+    string-max-length: false
+    string-max-input-length: 100
+    java-max-vla-length: 10
+    java-max-input-array-length: 10
+    string-printable: false
+    java-throw-runtime-exceptions: false
+    java-external-code-action: 'mock'
+    load-containing-class-only: true
