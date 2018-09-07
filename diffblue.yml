@@ -1,3 +1,5 @@
+buildCmd: cd mycollab-core; mvn compile
+testCmd: cd mycollab-core; mvn test
 cbmcArguments:
   java-mock-class: ["java.security.KeyFactory", "java.security.Signature", "java.util.Date", "java.io.FileReader", "java.nio.file.Files", "java.lang.Process", "java.lang.ProcessBuilder", "java.io.File"]
 phases:
