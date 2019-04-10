@@ -1,6 +1,31 @@
 buildCmd: cd mycollab-core; mvn -e -X -Dmaven.test.skip=true compile
 testCmd: cd mycollab-core; mvn test
 skipVerification: true
+units:
+  # Target Coverage: Unknown %
+  - target:
+    - dir: mycollab-core/target/classes
+      file: com/mycollab/html/DivLessFormatter.class
+      sourceDir: mycollab-core/target/classes
+      sourceFile: com/mycollab/html/DivLessFormatter.kt
+    # Child of DivLessFormatter.class
+    # Child Coverage: Unknown %
+    - dir: mycollab-core/target/classes
+      file: com/hp/gagawa/java/Node.class
+      sourceDir: mycollab-core/src/main/java
+      sourceFile: com/hp/gagawa/java/Node.java
+    # Child of DivLessFormatter.class
+    # Child Coverage: Unknown %
+    - dir: mycollab-core/target/classes
+      file: com/hp/gagawa/java/elements/Text.class
+      sourceDir: mycollab-core/src/main/java
+      sourceFile: com/hp/gagawa/java/elements/Text.java
+    # Child of DivLessFormatter.class
+    # Child Coverage: Unknown %
+    - dir: mycollab-core/target/classes
+      file: com/hp/gagawa/java/elements/Div.class
+      sourceDir: mycollab-core/src/main/java
+      sourceFile: com/hp/gagawa/java/elements/Div.java
 phases:
 -
 #0
