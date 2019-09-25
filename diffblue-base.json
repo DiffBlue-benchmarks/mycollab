@@ -1,0 +1,21 @@
+{
+  "phaseBase": {
+    "preferDepsJar": true,
+    "context-include": [
+      "com.mycollab.",
+      "com.hp.gagawa.java.",
+      "ch.qos.cal10n.",
+      "org.mybatis.scripting.velocity.",
+      "org.vaadin.easyuploads.",
+      "org.springframework.extensions.jcr.jackrabbit.",
+      "db.migration.",
+      "com.diffblue.annotation.",
+      "java.",
+      "org.cprover.",
+      "org.slf4j.",
+      "sun.misc.",
+      "sun.nio.cs.",
+      "sun.util."
+    ]
+  }
+}
